@@ -369,26 +369,3 @@
 
 }
 
-/*=======Blog Section=========*/
-.latest__block-post {
-	padding: 20px;
-}
-.latest__block .more_btn__block {
-	margin-top: 10px;
-}
-.latest__block-title {
-	font-size: 20px;
-	font-weight: 800;
-}
-.team__block-section .team-member {
-	margin-bottom: 0;
-}
-.more_btn__block {
-	color: #feb20e;
-	font-weight: bold;
-	display: inline-block;
-	margin-top: 30px;
-}
-.project-detail-block {
-	padding: 30px;
-}
