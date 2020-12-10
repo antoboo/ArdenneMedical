@@ -1,6 +1,6 @@
 
 <?php 
-    $title = 'Services';
+    $title = 'Appointment Calendar';
 	require_once 'includes/header.php';
 ?>
 <div class="container py-5">

@@ -1,6 +1,6 @@
 ﻿<?php 
     
-	$title = 'Index';
+	$title = 'Contact';
 	require_once 'includes/header.php';
 
 ?>

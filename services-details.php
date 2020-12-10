@@ -1,5 +1,5 @@
 ﻿<?php 
-    $title = 'Index';
+    $title = 'Service Details';
 	require_once 'includes/header.php';
 ?>
 		<!-- Service Section -->

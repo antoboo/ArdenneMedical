@@ -1,5 +1,5 @@
 <?php    
-        $title = 'Success';
+        $title = 'Contact Success';
         require_once 'includes/header.php';  
         require_once 'contactsendemail.php';
         
