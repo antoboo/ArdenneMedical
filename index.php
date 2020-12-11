@@ -397,7 +397,7 @@
 							</div>
 							<h3>Ann Graham</h3>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
+							I have never experience professionalism like this before, the staff were really intuitive and nice. I love the fact that I can go on their calendar and see their events, its a good experince I want to have continued.
 							</p>
 						</div>
 					</div>
@@ -408,9 +408,9 @@
 							<div class="author_pic">
 								<img src="assets/images/testimonial/2.jpg" alt="" />
 							</div>
-							<h3>Andrew Flintoff</h3>
+							<h3>Andrea Flintoff</h3>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
+								Doctors know what they are doing, from you enter the office you are greeted with a smile. Appointments are set to have you aligned with the doctors'. 
 							</p>
 						</div>
 					</div>
