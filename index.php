@@ -421,9 +421,9 @@
 							<div class="author_pic">
 								<img src="assets/images/testimonial/3.jpg" alt="" />
 							</div>
-							<h3>Andrew Flintoff</h3>
+							<h3>Kerish</h3>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
+								Had my baby and I had to thank my Dr. Young, she was thoughtful and very confident in the infromation given to me. She made sure I had correction to book at the hositpal and deliveried our bouncing baby girl. 
 							</p>
 						</div>
 					</div>
