@@ -44,7 +44,7 @@
 										
 									</li>
 									<li>
-									<a href="service-details.php">Details on all of our Services</a>
+									<a href="services-details.php">Details on all of our Services</a>
 										
 									</li>
 								</ul>

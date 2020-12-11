@@ -34,7 +34,7 @@
 						</div>
 						<div class="text-content">
 							<p>
-							We are a tight-knit community of scientific, medical, and life sciences experts that produce and share the latest information, in a readable, understandable way.
+							To provide patient-centered healthcare with excellence in quality, service, and access.
 							</p>
 						</div>
 						<hr class="divider">

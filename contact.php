@@ -91,7 +91,7 @@
 								<!-- END IF MAIL SENT SUCCESSFULLY -->
 	<p><span class="error">* required field</span></p>
 
-	<form method="post" action="/attendanceMerge/contactsuccess.php">  
+	<form method="post" action="contactsuccess.php">  
 
 			Name: <input type="text" name="UName" placehlder = "User Name" class="form-control mb-2">
 			
