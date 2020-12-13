@@ -10,25 +10,39 @@
             $fname = $_POST['firstname'];
             $lname = $_POST['lastname'];
             $dob = $_POST['dob'];
+            $gender = $_POST['gender'];
             $email = $_POST['email'];
-            $laddress = $_POST['laddress'];
-            //$gender = $_POST['gender'];
+            $laddress = $_POST['laddress'];           
             $contact = $_POST['phone'];
-            $doctors = $_POST['doctors'];
-          
+            $doctors = $_POST['doctors'];          
             $orig_file = $_FILES["avatar"]["tmp_name"];
             $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
             $target_dir = 'uploads/';
             $destination = "$target_dir$contact.$ext";
-            move_uploaded_file($orig_file, $destination);}
+            move_uploaded_file($orig_file, $destination);
+        
+                
+        }
             
            
+// Checking to see duplicated
+        // $duplicate=mysqli_query($conn,"select * from clients where emailaddress ='$email'");
+        // if (mysqli_num_rows($duplicate)>0)
+        // {
+        // header("Location: appoint.php?message=User name or Email id already exists.");
+        // }
+
             
-            $isSuccess = $crud->insertClients($fname, $lname, $dob, $email,$laddress, $contact,$doctors, $destination); 
+            $isSuccess = $crud->insertClients($fname, $lname, $dob, $gender, $email, $laddress, $contact,$doctors, $destination); 
             $doctorsName=$crud->getDoctorsById($doctors);
 
+          
+            $printname = $doctorsName["name"];
+
+
+
             if($isSuccess){
-                SendEmail::Sendmail($email,"Welcome to IT Conference 2020", "You have successfully registerted for this year\'s IT Conference");
+                SendEmail::Sendmail($email,"Welcome to Ardenne Medical Centre", " Hi " .$fname. " ".$lname.",". "<br/> <br/> You have successfully completed the appointment form and you have selected " .$printname." to be your attending doctor. <br/> <br/>You will be contacted shortly to confirm appointment on the contact number $contact provided. ,<br/> <br/> Thank you once again and see you soon $fname. ");
                 
                 
                 include 'includes/successmessage.php';
@@ -36,12 +50,6 @@
             }else {
                 include 'includes/errormessage.php';
 
-
-                // if (empty($_POST["gender"])) {
-                //     $genderErr = "Gender is required";
-                //   } else {
-                //     $gender = test_input($_POST["gender"]);
-                //   }
 
                   function test_input($data) {
                     $data = trim($data);
@@ -62,28 +70,12 @@
 
 
 
-<!-- This prints out values that were passed to the action page using methods = "get" -->
-
-<!--     <div class="card" style="width: 20rem;">
-        <div class="card-body">
-            <h5 class="card-title"> <?php // echo $_GET['firstname'].' '. $_GET['lastname'] ?></h5>
-            <h6 class="card-subtitle mb-2 text-muted">doctors
-            <?php //echo $_GET['doctors'] ?>
-            </h6>
-            <p class="card-text"> Date of Birth:  <?php // echo $_GET['dob'];  ?> </p>
-            <p class="card-text"> Email Add: <?php // echo $_GET['email'];  ?> </p>
-            <p class="card-text"> Telephone Number: <?php //echo $_GET['phone'];  ?> </p>
-            
-        </div>
-    </div>
-
--->
-<img src = "<?php echo $destination;?> " class ="rounded-circle" style = "width: 20%; height:20%"/>
+<img src = "<?php echo $destination;?> " class ="rounded-circle" style = "width: 10%; height:10%"/>
 
 <div class="card" style="width: 20rem;">
         <div class="card-body">
             <h5 class="card-title"><?php echo $_POST['firstname'].' '. $_POST['lastname']; ?></h5>
-            <h6 class="card-subtitle mb-2 text-muted">doctors
+            <h6 class="card-subtitle mb-2">Your Doctor is:
             <?php echo $doctorsName['name']; ?>
             </h6>
             <p class="card-text"> Date of Birth:  <?php echo $_POST['dob'];  ?> </p>

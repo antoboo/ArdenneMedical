@@ -38,11 +38,11 @@
 							$comment = test_input($_POST["comment"]);
 						}
 
-						if (empty($_POST["gender"])) {
-							$genderErr = "Gender is required";
-						} else {
-							$gender = test_input($_POST["gender"]);
-						}
+						// if (empty($_POST["gender"])) {
+						// 	$genderErr = "Gender is required";
+						// } else {
+						// 	$gender = test_input($_POST["gender"]);
+						// }
 						}
 
 						function test_input($data) {
@@ -91,18 +91,18 @@
 								<!-- END IF MAIL SENT SUCCESSFULLY -->
 	<p><span class="error">* required field</span></p>
 
-	<form method="post" action="contactsuccess.php">  
+	<form method="post" action="/medicalcenter/contactsuccess.php">  
 
-			Name: <input type="text" name="UName" placehlder = "User Name" class="form-control mb-2">
+			Name: <input type="text" name="UName" placeholder = "UserName" class="form-control mb-2">
 			
 			<br><br>
-			E-mail: <input type="text" name="FromEmail" placehlder = "User Name" class="form-control mb-2">
+			E-mail: <input type="text" name="FromEmail" placeholder = "Email" class="form-control mb-2">
 			
 			<br><br>
-			Subject: <input type="text" name="Subject" placehlder = "User Name" class="form-control mb-2">
+			Subject: <input type="text" name="Subject" placeholder = "Subject" class="form-control mb-2">
 			
 			<br><br>
-			Comment: <textarea name="msg" rows="5" cols="40"  placehlder = "Write The Message"class="form-control"></textarea>
+			Comment: <textarea name="msg" rows="5" cols="40"  placeholder = "Write The Message" class="form-control"></textarea>
 			<br><br>
 			
 			<br><br>

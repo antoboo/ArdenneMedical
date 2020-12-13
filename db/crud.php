@@ -11,18 +11,19 @@
         
         
             
-            public function insertClients($fname, $lname, $dob, $email,$laddress, $contact, $doctors, $avatar_path)
+            public function insertClients($fname, $lname, $dob, $gender,  $email, $laddress, $contact, $doctors, $avatar_path)
             {
                 
                 try {
                     //define sql statement to be excuted
-                    $sql = "INSERT INTO clients (firstname,lastname,dateofbirth,emailaddress,laddress,contactnumber,doctors_id,avatar_path)VALUES (:fname, :lname, :dob,  :email, :laddress, :contact, :doctors, :avatar_path)";
+                    $sql = "INSERT INTO clients (firstname,lastname,dateofbirth, gender, emailaddress,laddress,contactnumber,doctors_id,avatar_path)VALUES (:fname, :lname, :dob, :gender,  :email, :laddress, :contact, :doctors, :avatar_path)";
                     //define sql statement to be excuted
                     $stmt = $this -> db -> prepare($sql);       
                     //bind all placeholder to the actual values
                     $stmt->bindparam(':fname', $fname);
                     $stmt->bindparam(':lname', $lname);
                     $stmt->bindparam(':dob', $dob);
+                    $stmt->bindparam(':gender', $gender);
                     $stmt->bindparam(':email', $email);
                     $stmt->bindparam(':laddress', $laddress);
                     $stmt->bindparam(':contact', $contact);
@@ -45,9 +46,9 @@
 
             }    
 
-            public function editClients($id, $fname, $lname, $dob, $email,$laddress, $contact,$doctors){
+            public function editClients($id, $fname, $lname, $dob, $gender, $email,$laddress, $contact,$doctors){
                 try {
-                $sql = "UPDATE `clients` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob, `emailaddress`=:email, `laddress`=:laddress,
+                $sql = "UPDATE `clients` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob, `gender`=:gender, `emailaddress`=:email, `laddress`=:laddress,
                 `contactnumber`=:contact,`doctors_id`=:doctors WHERE clients_id = :id ";
 
                     $stmt = $this -> db -> prepare($sql);       
@@ -56,6 +57,7 @@
                     $stmt->bindparam(':fname', $fname);
                     $stmt->bindparam(':lname', $lname);
                     $stmt->bindparam(':dob', $dob);
+                    $stmt->bindparam(':gender', $gender);
                     $stmt->bindparam(':email', $email);
                     $stmt->bindparam(':laddress', $laddress);
                     $stmt->bindparam(':contact', $contact);
@@ -131,24 +133,19 @@
 
 
             public function deleteClients($id){
-                
-                try {
+                try{
+                     $sql = "delete from clients where clients_id = :id";
+                     $stmt = $this->db->prepare($sql);
+                     $stmt->bindparam(':id', $id);
+                     $stmt->execute();
+                     return true;
+                 }catch (PDOException $e) {
+                     echo $e->getMessage();
+                     return false;
+                 }
+             }
 
-                    $sql = "delete from clients WHERE clients_id = :id";
-                    $stmt = $this->db->prepare($sql);
-                    $stmt -> bindparam(':id',$id);
-                    $stmt ->execute();
-                    return true;
 
-                } 
-                
-                catch ( PDOException $e)
-                {
-                    echo $e->getMessage();
-                    return false;
-                }
-
-            }
 
             public function deleteAllClients(){
                 

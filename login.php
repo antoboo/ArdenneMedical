@@ -1,6 +1,6 @@
 <?php
     $title = 'User Login'; 
-
+    ob_start();
     require_once 'includes/header.php'; 
     require_once 'db/conn.php'; 
     

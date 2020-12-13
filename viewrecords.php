@@ -1,7 +1,8 @@
 <?php     
 $title = 'View Records';
-
+ob_start();
 require_once 'includes/header.php'; 
+
 require_once 'includes/auth_check.php';
 require_once 'db/conn.php';  
      
@@ -16,6 +17,7 @@ require_once 'db/conn.php';
             <th> First Name </th>
             <th> Last Name </th>
             <th> Date of Birth </th>
+            <th> Gender </th>
             <th> Address </th>            
             <th> Email Address </th>
             <th> Contact </th>
@@ -29,6 +31,7 @@ require_once 'db/conn.php';
                 <td> <?php echo $r['firstname'] ?> </td>
                 <td> <?php echo $r['lastname'] ?> </td>
                 <td> <?php echo $r['dateofbirth'] ?> </td>
+                <td> <?php echo $r['gender'] ?> </td>
                 <td> <?php echo $r['laddress'] ?> </td>
                 <td> <?php echo $r['emailaddress'] ?> </td>
                 <td> <?php echo $r['contactnumber'] ?> </td>
@@ -48,7 +51,7 @@ require_once 'db/conn.php';
     </table>
 
     <br/> <br/> <br/>
-    <a onclick="return confirm ('Are you are sure you want to delete All of the record/s?');" href = "delete.php?id=<?php echo $r['clients_id'] ?>" class="btn btn-danger float-right fix-bottom"> Delete All Records</a> 
+    <a onclick="return confirm ('Are you are sure you want to delete All of the record/s?');" href = "deleteAll.php?id=<?php echo $r['clients_id'] ?>" class="btn btn-danger float-right fix-bottom"> Delete All Records</a> 
     <a href = "appoint.php?id=<?php echo $r['clients_id'] ?> " class="btn btn-success float-right fix-bottom"> Add New Record</a> 
 
 

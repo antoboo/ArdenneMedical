@@ -9,13 +9,15 @@ require_once 'db/conn.php';
             $fname = $_POST['firstname'];
             $lname = $_POST['lastname'];
             $dob = $_POST['dob'];
+            $gender = $_POST['gender'];
+            $laddress = $_POST['laddress'];
             $email = $_POST['email'];
             $contact = $_POST['phone'];
-            $specialty = $_POST['specialty'];
+            $doctors = $_POST['doctors'];
 
 
 //Call CRUD Function 
-        $result = $crud->editAttendee($id, $fname, $lname, $dob, $email, $contact, $specialty, $destination);
+        $result = $crud->editClients($id, $fname, $lname, $dob, $gender, $laddress, $email,  $contact,$doctors);
         
 //Redirect to index.php
         if ($result){

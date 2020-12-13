@@ -1,11 +1,13 @@
 <?php    
-        $title = 'Contact Success';
+        $title = 'Success';
         require_once 'includes/header.php';  
         require_once 'contactsendemail.php';
         
         $FromEmail= '';
         $Subject = '';
         $msg = '';
+
+
         if(isset($_POST['submit'])) {
             //extract values from the $_POST array
             $UName = $_POST['UName'];          
@@ -13,17 +15,18 @@
             $Subject = $_POST['Subject'];           
             $msg = $_POST['msg'];
           }
-            
-            $isSuccess=boolval(false);
+
+
+            $isSuccess=boolval(true);
 
             if($isSuccess=true){
                 SendEmail::Sendmail($FromEmail,$Subject, $msg);
                 
                 
-                include 'includes/successmessage.php';
+                include '/includes/successmessage.php';
 
             }else {
-                include 'includes/errormessage.php';
+                include '/includes/errormessage.php';
 
 
                 // if (empty($_POST["gender"])) {

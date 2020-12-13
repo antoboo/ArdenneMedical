@@ -1,9 +1,13 @@
 <?php 
         $title = 'View Record';
+     
         require_once 'includes/header.php'; 
+        
         require_once 'includes/auth_check.php';
+        
  
         require_once 'db/conn.php';
+    
 
 
         //Get  Attendee by id
@@ -18,7 +22,7 @@
 ?>
 
 
-<img src="<?php echo $result['avatar_path'];?> " class ="rounded-circle"style ="width: 20%; height:20%"/>
+<img src="<?php echo $result['avatar_path'];?> " class ="rounded-circle" style ="width: 20%; height:20%"/>
         
         <div class="card" style="width: 20rem;">
             <div class="card-body">
@@ -30,6 +34,7 @@
                 </h6>
 
                 <p class="card-text"> Date of Birth:  <?php echo $result['dateofbirth'];  ?> </p>
+                <p class="card-text"> Gender:  <?php echo $result['gender'];  ?> </p>
                 <p class="card-text"> Email Add: <?php echo $result['emailaddress'];  ?> </p>
                 <p class="card-text"> Telephone Number: <?php echo $result['contactnumber'];  ?> </p>
                 

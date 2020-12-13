@@ -24,7 +24,7 @@
                             $new_password = md5($password.$username);
                         
                             //define sql statement to be excuted
-                            $sql = "INSERT INTO users (username, password)VALUES (:username, :password)";
+                            $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
                             //define sql statement to be excuted
                             $stmt = $this -> db -> prepare($sql);       
                             //bind all placeholder to the actual values
@@ -50,7 +50,7 @@
                     {          
                         try {
                             $sql = "select * from `users` where `username` = :username AND `password` = :password";
-                           // The error was that you had query and not prepare.... :() $stmt = $this->db->query($sql);
+                        
                             $stmt = $this->db->prepare($sql);
                             $stmt->bindparam(':username',$username);
                             $stmt->bindparam(':password',$password);
