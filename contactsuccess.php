@@ -17,9 +17,9 @@
           }
 
 
-           // $isSuccess=boolval(true);
+           $isSuccess = $FromEmail;
 
-            if($isSuccess=true){
+            if($isSuccess){
                 SendEmail::Sendmail($FromEmail,$Subject, $msg);
                 
                 
@@ -29,11 +29,7 @@
                 include '/includes/errormessage.php';
 
 
-                // if (empty($_POST["gender"])) {
-                //     $genderErr = "Gender is required";
-                //   } else {
-                //     $gender = test_input($_POST["gender"]);
-                //   }
+               
 
                   function test_input($data) {
                     $data = trim($data);

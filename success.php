@@ -25,12 +25,16 @@
         }
             
            
-// Checking to see duplicated
-        // $duplicate=mysqli_query($conn,"select * from clients where emailaddress ='$email'");
-        // if (mysqli_num_rows($duplicate)>0)
-        // {
-        // header("Location: appoint.php?message=User name or Email id already exists.");
-        // }
+        if (isset($_POST['email_check'])) {            
+            $sql = "SELECT * FROM clients WHERE emailaddress='$email'";
+            $results = mysqli_query($db, $sql);
+            if (mysqli_num_rows($results) > 1) {
+              echo "taken";	
+            }else{
+              echo 'not_taken';
+            }
+            exit();
+        }
 
             
             $isSuccess = $crud->insertClients($fname, $lname, $dob, $gender, $email, $laddress, $contact,$doctors, $destination); 
