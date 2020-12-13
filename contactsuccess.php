@@ -1,5 +1,5 @@
 <?php    
-        $title = 'Success';
+        $title = 'Contact Success';
         require_once 'includes/header.php';  
         require_once 'contactsendemail.php';
         
@@ -17,7 +17,7 @@
           }
 
 
-            $isSuccess=boolval(true);
+           // $isSuccess=boolval(true);
 
             if($isSuccess=true){
                 SendEmail::Sendmail($FromEmail,$Subject, $msg);
@@ -50,4 +50,5 @@
 
 ?>
 <?php echo '<br/> <br/> <hr/>'; ?>
+
 <?php require_once 'includes/footer.php'  ?>

@@ -91,22 +91,22 @@
 								<!-- END IF MAIL SENT SUCCESSFULLY -->
 	<p><span class="error">* required field</span></p>
 
-	<form method="post" action="/medicalcenter/contactsuccess.php">  
+	<form method="post" action="contactsuccess.php">  
 
-			Name: <input type="text" name="UName" placeholder = "UserName" class="form-control mb-2">
+			Name: <input require type="text" name="UName" placeholder = "UserName" class="form-control mb-2">
 			
 			<br><br>
-			E-mail: <input type="text" name="FromEmail" placeholder = "Email" class="form-control mb-2">
+			E-mail: <input required type="text" name="FromEmail" placeholder = "Email" class="form-control mb-2">
 			
 			<br><br>
-			Subject: <input type="text" name="Subject" placeholder = "Subject" class="form-control mb-2">
+			Subject: <input required type="text" name="Subject" placeholder = "Subject" class="form-control mb-2">
 			
 			<br><br>
-			Comment: <textarea name="msg" rows="5" cols="40"  placeholder = "Write The Message" class="form-control"></textarea>
+			Comment: <textarea required name="msg" rows="5" cols="40"  placeholder = "Write The Message" class="form-control"></textarea>
 			<br><br>
 			
 			<br><br>
-			<button class="btn btn-success" name=btn-send>Send </button>
+			<button class="btn btn-success" name="btn-send"> Send </button>
 </form>
 							<!-- END Contact FORM -->
 						</div>

@@ -61,19 +61,19 @@
                         <div class="form-group">
                             <label for="address">Address</label>
                                 <input required type="laddress" class="form-control" id="laddress" name="laddress" aria-describedby="laddressHelp">
-                            <medium id="laddressHelp" class="form-text text-danger">We'll never share your address with anyone else.</medium>
+                            <small id="laddressHelp" class="form-text text-muted">We'll never share your address with anyone else.</small>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email address</label>
                                 <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
 
                             <div class="form-group">
                                 <label for="phone">Contact Number</label>
                                     <input required type="text" class="form-control" id="phone" name ="phone" aria-describedby="phoneHelp">
-                                <small id="phoneHelp" class="form-text text-danger">We'll never share your phone number with anyone else.</small>
+                                <small id="phoneHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
                             </div>
 
                                 <div class="form-group">
@@ -86,18 +86,19 @@
                                 </select>
 
                                 </div>      
+                                
 
-                <div class="custom-file">
-                    <input type="file" accept="image/*" class="custom-file-input form-group" id="avatar" name="avatar" >
-                    <label class="custom-file-label" for="avatar">Choose File</label>
-                    <small id="avatarHelp" class="form-text text-success"> Upload is Optional</small>
-                </div>
+                                <div class="custom-file">
+                                    <label class="custom-file-label" for="avatar">Choose Your Picture</label>
+                                    <input type="file" accept="image/*" onchange="previewImage(this);" class="form-control-file" placeholder="Upload Your Picture " name="avatar" >
+                                     <small id="avatarHelp" class="form-text text-success"> Upload is Optional</small>
+                                </div>
 
    
 
     <button type="submit"  name = "submit" class="btn btn-success btn-block" disable> Register</button>
     
-    <input type="submit" id="submit" name = "submit" value="Register Now"> 
+    
 </form>
     </div>
         

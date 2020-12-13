@@ -269,12 +269,12 @@
 								</figure>
 							</div>
 							<div class="team_detail">
-								<h3>Marcus Stoinis</h3>
-								<span>Senior Developer</span>
+								<h3>Dr. Phill </h3>
+								<span>Reflexologists</span>
 							</div>
 							<div class="team_text">
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								Dr. Phill application of pressure to feet, hands, or ears sends a calming message from the peripheral nerves to the central nervous system.
 								</p>
 							</div>
 							<div class="social_team">
@@ -304,12 +304,12 @@
 								</figure>
 							</div>
 							<div class="team_detail">
-								<h3>Jackson Coleman</h3>
-								<span>Senior Developer</span>
+								<h3>Dr. Wallace</h3>
+								<span>Physical Therapist</span>
 							</div>
 							<div class="team_text">
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									Dr. Wallace will ensure that you don't leave the way you came. Book for your sessions.
 								</p>
 							</div>
 							<div class="social_team">
@@ -339,12 +339,12 @@
 								</figure>
 							</div>
 							<div class="team_detail">
-								<h3>Mackenzie Harvey</h3>
-								<span>Senior Developer</span>
+								<h3>Dr. Saz </h3>
+								<span>General Practioner / OBGYON </span>
 							</div>
 							<div class="team_text">
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									Dr. Saz has been with us for 6 years, and have helped many to count mothers through a safe delivery. 
 								</p>
 							</div>
 							<div class="social_team">
@@ -382,7 +382,7 @@
 							<h2>Our Testimonial</h2>
 							<span class="b-line"></span>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 's standard dummy text.
+								Get to know the patients that are reviews on our staff and service. 
 							</p>
 						</div>
 					</div>
@@ -423,7 +423,7 @@
 							</div>
 							<h3>Kerish</h3>
 							<p>
-								Had my baby and I had to thank my Dr. Young, she was thoughtful and very confident in the infromation given to me. She made sure I had correction to book at the hositpal and deliveried our bouncing baby girl. 
+								Had my baby and I had to thank my Dr. Saz, she was thoughtful and very confident in the infromation given to me. She made sure I had correction to book at the hositpal and deliveried our bouncing baby girl. 
 							</p>
 						</div>
 					</div>

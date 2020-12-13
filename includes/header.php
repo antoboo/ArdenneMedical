@@ -64,7 +64,7 @@
 					<div class="row">
 						<div class="col-lg-4 logo col-md-12 d-flex align-items-center">
 
-							<a href="index.php"> <img src="assets/images/logo.png"  width = "responsive"; height=" 90px"; alt="Logo"> </a>
+							<a href="index.php"> <img src="assets/images/logo.png"  width= "100%"; height=" 90px"; alt="Logo"> </a>
 
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle hidden-lg-up" data-toggle="collapse" data-target="#navbar-menu">
@@ -113,8 +113,9 @@
 												<a class="nav-item nav-link" href="login.php"> Login <span class="sr-only">(current)</span> </a>
 															
 										<?php } else{ ?>
+											<?php $usernamecap = $_SESSION['username'];?>
 
-											<a class="nav-item nav-link" href="#"><span> Hello <?php echo $_SESSION['username'] ?>!!!!</span> <span class="sr-only">(current)</span> </a>
+											<a class="nav-item nav-link" href="#"><span> Hello <?php echo ucfirst($usernamecap) ?>!!!!</span> <span class="sr-only">(current)</span> </a>
 											<a class="nav-item nav-link" href="logout.php"> Logout <span class="sr-only">(current)</span> </a>
 
 										<?php } ?>
@@ -173,12 +174,12 @@
 									<span class="submenu-button"></span>
 									<ul class="dropdown-menu">
 										<li>
-											<a href="appoint.php">Appointments To Be confirmed</a>
+											<a href="appoint.php">Make Appointments</a>
 										</li>
 
 										<li> 
 											<!-- views attending doctors -->
-											<a href="viewrecords.php">Views Appointments</a>
+											<a href="viewrecords.php">Views Appointments (Staff Only)</a>
 										</li>
 
 									</ul>
