@@ -34,7 +34,7 @@
     require_once 'user.php';
     $crud = new crud($pdo);
     $user = new user($pdo);
-    $conn = $dsn;
+    
     $user->insertUser("admin","@dministrat0r");
     
 
