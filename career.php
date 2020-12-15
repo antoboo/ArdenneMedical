@@ -32,7 +32,7 @@
 								<ul class="clearfix">
 									
 									<li>
-									<a href="testemail.php">Mission Statement</a>
+									<a href="about.php">Mission Statement</a>
 										
 									</li>
 									<li>

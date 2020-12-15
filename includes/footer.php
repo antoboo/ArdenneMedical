@@ -29,7 +29,7 @@
 								<a href="index.php">Index</a>
 							</li>
 							<li>
-								<a href="#">About us</a>
+								<a href="about.php">About us</a>
 							</li>
 							<li>
 								<a href="services.php">Service</a>
@@ -37,9 +37,7 @@
 							<li>
 								<a href="appoint.php">Appointment</a>
 							</li>
-							<li>
-								<a href="#">Shop</a>
-							</li>
+						
 							<li>
 								<a href="contact.php">Contact us</a>
 							</li>
@@ -106,7 +104,6 @@
 		<script src="assets/js/custom.js" type="text/javascript"></script>
 
 		
-
 	</body>
 
 

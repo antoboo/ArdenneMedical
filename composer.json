@@ -1,6 +1,7 @@
 {
     "require": {
         "sendgrid/sendgrid": "^7.9",
-        "elastic-email/web-api-client": "^1.0"
+        "elastic-email/web-api-client": "^1.0",
+        "swiftmailer/swiftmailer": "6.0"
     }
 }

@@ -46,9 +46,9 @@
 
             }    
 
-            public function editClients($id, $fname, $lname, $dob, $gender, $email,$laddress, $contact,$doctors){
+            public function editClients($id, $fname, $lname, $dob, $gender,$laddress, $email, $contact,$doctors){
                 try {
-                $sql = "UPDATE `clients` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob, `gender`=:gender, `emailaddress`=:email, `laddress`=:laddress,
+                $sql = "UPDATE `clients` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob, `gender`=:gender, `laddress`=:laddress,`emailaddress`=:email, 
                 `contactnumber`=:contact,`doctors_id`=:doctors WHERE clients_id = :id ";
 
                     $stmt = $this -> db -> prepare($sql);       
@@ -58,8 +58,8 @@
                     $stmt->bindparam(':lname', $lname);
                     $stmt->bindparam(':dob', $dob);
                     $stmt->bindparam(':gender', $gender);
-                    $stmt->bindparam(':email', $email);
                     $stmt->bindparam(':laddress', $laddress);
+                    $stmt->bindparam(':email', $email);
                     $stmt->bindparam(':contact', $contact);
                     $stmt->bindparam(':doctors', $doctors);
 
@@ -168,8 +168,33 @@
             }
 
 
+     //checking to see if email address exist
+
+            public function checkemail($email){
+         
+                     try{
+                    $sql = "SELECT emailaddress FROM clients where emailaddress = :emailaddress";
+                    $stmt = $this->db->prepare($sql); 
+                    $stmt -> bindparam(':emailaddress',$emailaddress,PDO::PARAM_STR);
+                    $stmt ->execute();
+                    $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+                    $cnt = 1;
+                    if ($stmt->rowCount() > 1) 
+                    {
+                        echo "User already exist";}
+                    else{
+                        echo "User added";
+                    }
+                    return $result;
+                }
+                catch ( PDOException $e)
+                {
+                    echo $e->getMessage();
+                    return false;
+                }
 
             }
 
+        }
         
 ?>

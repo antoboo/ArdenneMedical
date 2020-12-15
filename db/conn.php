@@ -1,17 +1,17 @@
 <?php
 //     Development connection 
-    // $host = '127.0.0.1';
-    // $db = 'medical_db';
-    // $user = 'root';
-    // $pass = '';
-    // $charset ='utf8mb4';
+    $host = '127.0.0.1';
+    $db = 'medical_db';
+    $user = 'root';
+    $pass = '';
+    $charset ='utf8mb4';
 
 //  Remote Database connection 
-    $host = 'sql9.freemysqlhosting.net';
-    $db = 'sql9376442';
-    $user = 'sql9376442';
-    $pass = 'zlAlWfPUPH';
-    $charset ='utf8mb4';
+    // $host = 'sql9.freemysqlhosting.net';
+    // $db = 'sql9376442';
+    // $user = 'sql9376442';
+    // $pass = 'zlAlWfPUPH';
+    // $charset ='utf8mb4';
 
      $dsn = "mysql:host=$host; dbname=$db; charset=$charset";
 
@@ -34,7 +34,7 @@
     require_once 'user.php';
     $crud = new crud($pdo);
     $user = new user($pdo);
-    
+    $conn = $dsn;
     $user->insertUser("admin","@dministrat0r");
     
 

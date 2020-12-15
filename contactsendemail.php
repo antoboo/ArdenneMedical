@@ -1,47 +1,108 @@
 <?php
-    require 'vendor/autoload.php';    
+require_once 'vendor/autoload.php';
 
-    class SendEmail{
-        public static function SendMail($to, $subject, $content){
-            $key = 'EC9DE9ADB8B7A2637B8F6626E3F5BC5F0D7C0C132B88EA3C1363F0FC60F2D3FE0CCF6B8F73D40336C7EAE0C243821EBD';
-            $url = 'https://api.elasticemail.com/v2/email/send';
+// Create the Transport
+$transport = (new Swift_SmtpTransport('smtp.gmail.com', 587,tls))
+  ->setUsername('jamaica.medicalctr@gmail.com')
+  ->setPassword('Cane068wow790')
+;
 
-            try {
+// Create the Mailer using your created Transport
+$mailer = new Swift_Mailer($transport);
 
-                $email = array('from' => $to,
-                'fromName' => 'Message sent by client',
-                'apikey' => $key,
-                'subject' => $subject,
-                'to' => 'arobertsgraham@gmail.com',
-                'bodyHtml' => $content,
-                'bodyText' => $content,
-                'isTransactional' => false);
-                
-                $ch = curl_init();
-                curl_setopt_array($ch, array(
-                    CURLOPT_URL => $url,
-                    CURLOPT_POST => true,
-                    CURLOPT_POSTFIELDS => $email,
-                    CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_HEADER => false,
-                    CURLOPT_SSL_VERIFYPEER => false
-                ));
-                
-                $result=curl_exec ($ch);
-                curl_close ($ch);
-                
-                echo $result;
+// Create a message
+$message = (new Swift_Message('Form Submission'))
+  ->setFrom(['jamaica.medicalctr@gmail.com' => 'Testing'])
+  ->setTo([$to,$UName)
+  ->setBody($msg)
+  ;
 
-                echo $to;
+// Send the message
+$result = $mailer->send($message);
 
-            } catch (Exception $e) {
-                echo 'Email exception Caught : ' . $e->getMessage() . "\n";
-                return false;
-            }
-        }
-    }
+
+
 ?>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <?php
+    // require 'vendor/autoload.php';    
+
+    // class SendEmail{
+    //     public static function SendMail($to, $subject, $content){
+    //         $key = 'EC9DE9ADB8B7A2637B8F6626E3F5BC5F0D7C0C132B88EA3C1363F0FC60F2D3FE0CCF6B8F73D40336C7EAE0C243821EBD';
+    //         $url = 'https://api.elasticemail.com/v2/email/send';
+
+    //         try {
+
+    //             $email = array('from' => $to,
+    //             'fromName' => 'Message sent by client',
+    //             'apikey' => $key,
+    //             'subject' => $subject,
+    //             'to' => 'arobertsgraham@gmail.com',
+    //             'bodyHtml' => $content,
+    //             'bodyText' => $content,
+    //             'isTransactional' => false);
+                
+    //             $ch = curl_init();
+    //             curl_setopt_array($ch, array(
+    //                 CURLOPT_URL => $url,
+    //                 CURLOPT_POST => true,
+    //                 CURLOPT_POSTFIELDS => $email,
+    //                 CURLOPT_RETURNTRANSFER => true,
+    //                 CURLOPT_HEADER => false,
+    //                 CURLOPT_SSL_VERIFYPEER => false
+    //             ));
+                
+    //             $result=curl_exec ($ch);
+    //             curl_close ($ch);
+                
+    //             //echo $result;
+
+    //            // echo $to;
+
+    //         } catch (Exception $e) {
+    //             echo 'Email exception Caught : ' . $e->getMessage() . "\n";
+    //             return false;
+    //         }
+    //     }
+    // }
+?>
+ -->
 
 
 <!-- 

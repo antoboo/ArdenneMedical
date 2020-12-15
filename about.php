@@ -109,7 +109,7 @@
 												II
 											</div>
 											<div class="tl-icon btn-icon-round btn-icon btn-icon-thin btn-warning">
-												<i class="fa fa-shopping-cart"></i>
+												<i class="fa fa-check"></i>
 											</div>
 											<div class="tl-content">
 												<h4 class="tl-tile text-danger">We are innovation leaders</h4>
@@ -127,7 +127,7 @@
 												III
 											</div>
 											<div class="tl-icon btn-icon-round btn-icon btn-icon-thin btn-success">
-												<i class="fa fa-camera"></i>
+												<i class="fa fa-asterisk"></i>
 											</div>
 											<div class="tl-content">
 												<h4 class="tl-tile text-warning">We offer a diverse approach</h4>

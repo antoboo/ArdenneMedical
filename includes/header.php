@@ -64,7 +64,7 @@
 					<div class="row">
 						<div class="col-lg-4 logo col-md-12 d-flex align-items-center">
 
-							<a href="index.php"> <img src="assets/images/logo.png"  width= "100%"; height=" 90px"; alt="Logo"> </a>
+							<a href="index.php"> <img src="assets/images/logo.png"  width= "responsive"; height=" 150px"; alt="Logo"> </a>
 
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle hidden-lg-up" data-toggle="collapse" data-target="#navbar-menu">

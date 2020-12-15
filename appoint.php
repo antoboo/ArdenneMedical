@@ -43,11 +43,11 @@
                 <div class="form-group">
 
                     <label for="dob">Date of Birth</label>
-                    <input required type="text" class="form-control" id="dob"  name ="dob">
+                    <input required type="text" placeholder = "yyyy/mm/dd" class="form-control" id="dob"  name ="dob">
                     
                 </div>
 
-                <div class="form-group">
+                <div class="form-control">
                             <label for="gender">Gender</label><br/>
                                 <!-- <input required type="radio" class="form-control" id="mgender" name="mgender" aria-describedby="genderHelp">
                                 <input required type="radio" class="form-control" id="lgender" name="fgender" aria-describedby="genderHelp"> -->

@@ -87,7 +87,7 @@
 								<!-- END IF MAIL SENT SUCCESSFULLY -->
 	<p><span class="error">* required field</span></p>
 
-	<form method="post" action="contactsuccess.php">  
+	<form method="post" action="contactsucess.php">  
 
 			Name: <input require type="text" name="UName" placeholder = "UserName" class="form-control mb-2">
 			

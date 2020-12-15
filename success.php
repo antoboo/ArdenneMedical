@@ -2,6 +2,7 @@
         $title = 'Success';
         require_once 'includes/header.php';  
         require_once 'db/conn.php';
+        require_once 'db/crud.php';
         require_once 'sendemail.php';
         
        
@@ -20,37 +21,27 @@
             $target_dir = 'uploads/ ';
             $destination = "$target_dir$contact.$ext";
             move_uploaded_file($orig_file, $destination);
-        
-                
-        }
             
+        }
+        $results = $crud -> checkemail($email);
+
+       echo $results['emailaddress'];
            
-        if (isset($_POST['email_check'])) {            
-            $sql = "SELECT * FROM clients WHERE emailaddress='$email'";
-            $results = mysqli_query($db, $sql);
-            if (mysqli_num_rows($results) > 1) {
-              echo "taken";	
-            }else{
-              echo 'not_taken';
-            }
-            exit();
-        }
-
-            
-            $isSuccess = $crud->insertClients($fname, $lname, $dob, $gender, $email, $laddress, $contact,$doctors, $destination); 
-            $doctorsName=$crud->getDoctorsById($doctors);
-
           
+            
+
+            $isSuccess = $crud->insertClients($fname, $lname, $dob, $gender, $email, $laddress, $contact,$doctors, $destination); 
+            $doctorsName=$crud->getDoctorsById($doctors);     
             $printname = $doctorsName["name"];
-
-
+              
             if($isSuccess){
                 SendEmail::Sendmail($email,"Welcome to Ardenne Medical Centre", " Hi " .$fname. " ".$lname.",". "<br/> <br/> You have successfully completed the appointment form and you have selected " .$printname." to be your attending doctor. <br/> <br/>You will be contacted shortly to confirm appointment on the contact number $contact provided. ,<br/> <br/> Thank you once again and see you soon $fname. ");
                 
                 
                 include 'includes/successmessage.php';
 
-            }else {
+            }
+            else {
                 include 'includes/errormessage.php';
 
 
@@ -60,8 +51,9 @@
                     $data = htmlspecialchars($data);
                     return $data;
                   }
-            
-        }
+                } 
+        
+              
 
 
 

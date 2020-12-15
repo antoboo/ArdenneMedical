@@ -51,14 +51,14 @@
         <div class="form-group">
 
             <label for="dob">Date of Birth</label>
-            <input type="text" class="form-control" value="<?php echo $clients['dateofbirth'] ?>" id="dob"  name ="dob">
+            <input type="text" class="form-control" placeholder ="yyyy/mm/dd" value="<?php echo $clients['dateofbirth'] ?>" id="dob"  name ="dob">
             
         </div>
 
-        <div class="form-group">
-                            <label for="gender">Gender -  <?php echo $clients['gender']; ?> </label><br/>
-                                  
-                            <input type="radio" id="Male" name="gender" value="Male">
+        <div class="form-control">
+                            <label for="gender">Gender Previously selected -  <?php echo $clients['gender']; ?> </label><br/>
+                                <h5 class="text-danger">  <?php echo  "Kindly verify the gender"; ?></h5>
+                                    <input type="radio" id="Male" name="gender" value="Male">
                                     <label for="male">Male</label>
                                     <input type="radio" id="Female" name="gender" value="Female">
                                     <label for="Female">Female</label><br>
@@ -74,7 +74,7 @@
             
                         <div class="form-group">
                                     <label for="email">Email address</label>
-                                    <input  class="form-control" value="<?php echo $clients['emailaddress'] ?>" id="email"  name="email" aria-describedby="emailHelp" attribute="readonly" >
+                                    <input  class="form-control" value="<?php echo $clients['emailaddress'] ?>" id="email"  name="email" aria-describedby="emailHelp" readonly >
                                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
 

@@ -39,9 +39,9 @@
 									<span class="sub-text">we are here to get your questions answered</span>
 									<h2>The team that cares</h2>
 									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.
+										You will not find our type of customer service anywhere else, grade A service.
 									</p>
-									<a class="btn-text" href="#section2"> Read More</a>
+									<a class="btn-text" href="about.php"> Read More</a>
 								</div>
 							</div>
 						</li>
@@ -70,12 +70,12 @@
 							data-splitout="none"
 							data-responsive_offset="on">
 								<div class="banner-text">
-									<span class="sub-text">we are here to help you</span>
-									<h2>Professional Cleaning Services Provider</h2>
+									<span class="sub-text">We are here to help you</span>
+									<h2>Professional Staff</h2>
 									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.
+										Ardenne medical is where you will always feel welcomed.
 									</p>
-									<a class="btn-text" href="#"> Read More</a>
+									<a class="btn-text" href="services.php"> Read More</a>
 								</div>
 							</div>
 						</li>
@@ -107,9 +107,9 @@
 									<span class="sub-text">We beleive that your ever growing family is the greatest venture, we will be there.</span></span>
 									<h2>We Are Your OBGYN Service.</h2>
 									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.
+										Trust us with your Love ones, and you wont be disaapointed.
 									</p>
-									<a class="btn-text" href="#"> Read More</a>
+									<a class="btn-text" href="services.php"> Read More</a>
 								</div>
 							</div>
 						</li>
@@ -146,7 +146,7 @@
 								</figure>
 								<h3><a href="#">Home Visits</a></h3>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
+								Durning this pandemic, your safety is our priority. Set your appointment, you will be contacted to confirm time of visit. 
 								</p>
 							</div>
 
@@ -156,7 +156,7 @@
 								</figure>
 								<h3><a href="#">Medicals</a></h3>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
+								Many services for complete health checkup are available to meet your needs.
 								</p>
 							</div>
 
@@ -166,7 +166,7 @@
 								</figure>
 								<h3><a href="#">Chronic Care</a></h3>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
+									Blood Testing, Hypertension, Over Weight, we have your interset at heart. You information will be protected.
 								</p>
 							</div>
 
@@ -176,7 +176,7 @@
 								</figure>
 								<h3><a href="#">Rapid Testing</a></h3>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
+								We have top of the line equipments that will shorten your waiting time and allow you to know about your updates up to 48 hours.
 								</p>
 							</div>
 
@@ -186,7 +186,7 @@
 								</figure>
 								<h3><a href="#">Vaccination</a></h3>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quos aperiam ipsam modi dolor suscipit asperiores perspiciatis.
+								Vaccination is our simple, safe, and effective way of helping you protect your precious ones against harmful diseases.
 								</p>
 							</div>
 
@@ -245,16 +245,16 @@
 							<div class="social_team">
 								<ul>
 									<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
+										<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-youtube"></i></a>
+										<a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -279,17 +279,17 @@
 							</div>
 							<div class="social_team">
 								<ul>
-									<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
+								<li>
+										<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
+										<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-youtube"></i></a>
+										<a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -314,17 +314,17 @@
 							</div>
 							<div class="social_team">
 								<ul>
-									<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
+								<li>
+										<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
+										<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-youtube"></i></a>
+										<a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -349,17 +349,17 @@
 							</div>
 							<div class="social_team">
 								<ul>
-									<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
+								<li>
+										<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
+										<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-youtube"></i></a>
+										<a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
 									</li>
 								</ul>
 							</div>
