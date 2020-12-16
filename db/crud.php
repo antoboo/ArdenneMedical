@@ -170,7 +170,7 @@
 
      //checking to see if email address exist
 
-            public function checkemail($email){
+            public function checkemail($emailaddress){
          
                      try{
                     $sql = "SELECT emailaddress FROM clients where emailaddress = :emailaddress";
@@ -181,9 +181,13 @@
                     $cnt = 1;
                     if ($stmt->rowCount() > 1) 
                     {
-                        echo "User already exist";}
+                        echo "User already exist";
+                       // ob_start();
+                        header("Location: viewrecords.php");
+                    }
                     else{
                         echo "User added";
+                        
                     }
                     return $result;
                 }

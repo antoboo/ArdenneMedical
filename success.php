@@ -23,12 +23,16 @@
             move_uploaded_file($orig_file, $destination);
             
         }
-        $results = $crud -> checkemail($email);
-
-       echo $results['emailaddress'];
-           
-          
+        
             
+            if (!empty($_POST['email'])){
+
+                $results = $crud -> checkemail($email);                  
+
+                 echo $results['emailaddress'];
+        
+          
+            }
 
             $isSuccess = $crud->insertClients($fname, $lname, $dob, $gender, $email, $laddress, $contact,$doctors, $destination); 
             $doctorsName=$crud->getDoctorsById($doctors);     
