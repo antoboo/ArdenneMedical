@@ -178,18 +178,15 @@
                     $stmt -> bindparam(':emailaddress',$emailaddress,PDO::PARAM_STR);
                     $stmt ->execute();
                     $result = $stmt->fetchAll(PDO::FETCH_OBJ);
-                    $cnt = 1;
-                    if ($stmt->rowCount() > 1) 
+                    $cnt=1;
+                    if ($stmt->rowCount()>0) 
                     {
-                        echo "User already exist";
-                       // ob_start();
-                        header("Location: viewrecords.php");
+                        echo "Your emailaddress was detected in our database, you will be contacted shorthly to confirm your multiple appointment requests";
                     }
                     else{
-                        echo "User added";
-                        
+                        echo "Your appointment request was added, you will be contacted shorthly to confirm appointment date";
                     }
-                    return $result;
+                     return $result;
                 }
                 catch ( PDOException $e)
                 {

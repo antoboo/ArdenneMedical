@@ -176,7 +176,7 @@
 								</figure>
 								<h3><a href="#">Rapid Testing</a></h3>
 								<p>
-								We have top of the line equipments that will shorten your waiting time and allow you to know about your updates up to 48 hours.
+								We have top of the line equipment that will shorten your waiting time and allow you to know about your updates up to 48 hours.
 								</p>
 							</div>
 
@@ -194,9 +194,9 @@
 								<figure>
 									<img src="assets/images/service/image_6.jpg" alt="" />
 								</figure>
-								<h3><a href="#">Receiptionist</a></h3>
+								<h3><a href="#">Receptionist</a></h3>
 								<p>
-									Professional Recieptionist that makes you feel right at home, not forgetting that your time matters. 
+									Professional Receptionist that makes you feel right at home, not forgetting that your time matters. 
 								</p>
 							</div>
 						</div>

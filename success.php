@@ -25,39 +25,44 @@
         }
         
             
-            if (!empty($_POST['email'])){
+         
 
                 $results = $crud -> checkemail($email);                  
 
-                 echo $results['emailaddress'];
-        
-          
-            }
+                 //$results['emailaddress'];
 
+            if( $results==false ){
+
+                echo"love";
+
+       
+          
             $isSuccess = $crud->insertClients($fname, $lname, $dob, $gender, $email, $laddress, $contact,$doctors, $destination); 
             $doctorsName=$crud->getDoctorsById($doctors);     
             $printname = $doctorsName["name"];
               
-            if($isSuccess){
-                SendEmail::Sendmail($email,"Welcome to Ardenne Medical Centre", " Hi " .$fname. " ".$lname.",". "<br/> <br/> You have successfully completed the appointment form and you have selected " .$printname." to be your attending doctor. <br/> <br/>You will be contacted shortly to confirm appointment on the contact number $contact provided. ,<br/> <br/> Thank you once again and see you soon $fname. ");
-                
-                
-                include 'includes/successmessage.php';
+                        if($isSuccess){
+                            SendEmail::Sendmail($email,"Welcome to Ardenne Medical Centre", " Hi " .$fname. " ".$lname.",". "<br/> <br/> You have successfully completed the appointment form and you have selected " .$printname." to be your attending doctor. <br/> <br/>You will be contacted shortly to confirm appointment on the contact number $contact provided. ,<br/> <br/> Thank you once again and see you soon $fname. ");
+                            
+                            
+                            include 'includes/successmessage.php';
 
-            }
-            else {
-                include 'includes/errormessage.php';
+                        }
+                        else {
+                            include 'includes/errormessage.php';
 
 
-                  function test_input($data) {
-                    $data = trim($data);
-                    $data = stripslashes($data);
-                    $data = htmlspecialchars($data);
-                    return $data;
-                  }
-                } 
+                            function test_input($data) {
+                                $data = trim($data);
+                                $data = stripslashes($data);
+                                $data = htmlspecialchars($data);
+                                return $data;
+                            }
+                            } 
         
-              
+                        }
+            
+        
 
 
 

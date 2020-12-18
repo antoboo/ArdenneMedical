@@ -10,7 +10,7 @@
     <h1 class="display-4">Ardene Medical Center Calendar</h1>
     <p class="font-italic mb-0">Take a look at our monthly updated clarendar events, get to see the dates of our standard procedures. </p>
     <p class="font-italic">Now you have seen out events<a href="appoint.php" class="text-green">
-        <u>Book your appointmnet</u></a>
+        <u>Book your appointment</u></a>
     </p>
   
 

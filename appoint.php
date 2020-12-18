@@ -1,9 +1,10 @@
 <?php 
     
     $title = 'Appointment';
+   
     require_once 'includes/header.php';
     require_once 'db/conn.php';
-    //include('success.php');
+   
 
     $results = $crud -> getDoctors();
 
