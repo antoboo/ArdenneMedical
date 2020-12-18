@@ -66,7 +66,7 @@
       </li>
       <li>
         <div class="date">10</div>
-        <div class="event bg-info">Physio Consultant</div>
+        <div class="event bg-info">Physio Consultation</div>
       </li>
       <li>
         <div class="date">11</div>

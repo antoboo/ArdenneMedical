@@ -21,7 +21,7 @@
 										<div class="content">
 											<p>
 												
-												7A Ardrenne Road
+												7A Ardenne Road
 												
 											</p>
 											<p>

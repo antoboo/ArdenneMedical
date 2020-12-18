@@ -107,7 +107,7 @@
 									<span class="sub-text">We beleive that your ever growing family is the greatest venture, we will be there.</span></span>
 									<h2>We Are Your OBGYN Service.</h2>
 									<p>
-										Trust us with your Love ones, and you wont be disaapointed.
+										Trust us with your loved ones, and you wont be disappointed.
 									</p>
 									<a class="btn-text" href="services.php"> Read More</a>
 								</div>
