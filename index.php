@@ -166,7 +166,7 @@
 								</figure>
 								<h3><a href="#">Chronic Care</a></h3>
 								<p>
-									Blood Testing, Hypertension, Over Weight, we have your interset at heart. You information will be protected.
+									Blood Testing, Hypertension, Over Weight, we have your interset at heart. Your information will be protected.
 								</p>
 							</div>
 
@@ -233,11 +233,11 @@
 							</div>
 							<div class="team_detail">
 								<h3>Carnel Graham</h3>
-								<span>Lab Techician</span>
+								<span>Lab Technician </span>
 							</div>
 							<div class="team_text">
 								<p>
-									With our expert techician, no result is >100% accurate. 
+									With our expert Technician, no result is < 100% accurate. 
 									Trust our word.
 
 								</p>
@@ -340,11 +340,11 @@
 							</div>
 							<div class="team_detail">
 								<h3>Dr. Saz </h3>
-								<span>General Practioner / OBGYON </span>
+								<span>General Practioner / OBGYN  </span>
 							</div>
 							<div class="team_text">
 								<p>
-									Dr. Saz has been with us for 6 years, and have helped many to count mothers through a safe delivery. 
+								Dr Saz has been with us for 6 years and has helped many mothers through safe deliveries 
 								</p>
 							</div>
 							<div class="social_team">
@@ -382,7 +382,7 @@
 							<h2>Our Testimonial</h2>
 							<span class="b-line"></span>
 							<p>
-								Get to know the patients that are reviews on our staff and service. 
+							Get to know the patients that have posted reviews on our staff and services. 
 							</p>
 						</div>
 					</div>
@@ -397,8 +397,7 @@
 							</div>
 							<h3>Ann Graham</h3>
 							<p>
-							I have never experience professionalism like this before, the staff were really intuitive and nice. I love the fact that I can go on their calendar and see their events, its a good experince I want to have continued.
-							</p>
+							I have never experience professionalism like this before, the staff was really intuitive and nice. I love the fact that I can go on their calendar and see their events, it's a good experience I want to have continued.							</p>
 						</div>
 					</div>
 
@@ -410,7 +409,7 @@
 							</div>
 							<h3>Andrea Flintoff</h3>
 							<p>
-								Doctors know what they are doing, from you enter the office you are greeted with a smile. Appointments are set to have you aligned with the doctors'. 
+								The doctors know what they are doing, from entering the office you are greeted with a warm smile. Appointments are set to have you aligned with the doctors' availability. 
 							</p>
 						</div>
 					</div>
@@ -423,7 +422,7 @@
 							</div>
 							<h3>Kerish</h3>
 							<p>
-								Had my baby and I had to thank my Dr. Saz, she was thoughtful and very confident in the infromation given to me. She made sure I had correction to book at the hositpal and deliveried our bouncing baby girl. 
+								Had my baby and I had to thank my Dr. Saz, she was thoughtful and very confident in the information given to me. She made sure I booked correctly into the hositpal and deliveried our bouncing baby girl. 
 							</p>
 						</div>
 					</div>

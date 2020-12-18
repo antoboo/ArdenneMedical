@@ -5,109 +5,10 @@
 
 ?>
 
-						<?php
-						// define variables and set to empty values
-						$nameErr = $emailErr = $genderErr = $websiteErr = "";
-						$name = $email = $gender = $comment = $website = "";
+					
+<div class="container">			
 
-						if ($_SERVER["REQUEST_METHOD"] == "POST") {
-						if (empty($_POST["name"])) {
-							$nameErr = "Name is required";
-						} else {
-							$name = test_input($_POST["name"]);
-							// check if name only contains letters and whitespace
-							if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-							$nameErr = "Only letters and white space allowed";
-							}
-						}
-						
-						if (empty($_POST["email"])) {
-							$emailErr = "Email is required";
-						} else {
-							$email = test_input($_POST["email"]);
-							// check if e-mail address is well-formed
-							if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-							$emailErr = "Invalid email format";
-							}
-						}
-							
-						
-						if (empty($_POST["comment"])) {
-							$comment = "";
-						} else {
-							$comment = test_input($_POST["comment"]);
-						}
-
-						
-						}
-
-						function test_input($data) {
-						$data = trim($data);
-						$data = stripslashes($data);
-						$data = htmlspecialchars($data);
-						return $data;
-						}
-						?>
-
-
-			<!-- Contact Section -->
-			<section class="padding ptb-xs-40">
-				<div class="container">
-
-					<div class="row">
-
-						<div class="col-lg-8">
-
-							<div class="headeing pb-30">
-								<h2>Let Us know what you thinking</h2>
-								<span class="b-line l-left line-h"></span>
-							</div>
-							<!-- Contact FORM -->
-							<!-- <p><span class="error">* required field</span></p>
-							<form method="post" action="process.php"> -->
-								<!-- IF MAIL IS NOT SENT SUCCESSFULLY -->
-									<?php
-									$Msg = '';
-									if(isset($_GET['error']))
-									{
-
-										$Msg = "Please fill in the blank";
-										echo'<div class ="alert alert-danger">'.$Msg.'</div>';
-									}
-									if(isset($_GET['success']))
-									{
-
-										$Msg = "Your message has been sent";
-										echo'<div class ="alert alert-success">'.$Msg.'</div>';
-									}
-									
-									
-									
-									?>
-								<!-- END IF MAIL SENT SUCCESSFULLY -->
-	<p><span class="error">* required field</span></p>
-
-	<form method="post" action="contactsucess.php">  
-
-			Name: <input require type="text" name="UName" placeholder = "UserName" class="form-control mb-2">
-			
-			<br><br>
-			E-mail: <input required type="text" name="FromEmail" placeholder = "Email" class="form-control mb-2">
-			
-			<br><br>
-			Subject: <input required type="text" name="Subject" placeholder = "Subject" class="form-control mb-2">
-			
-			<br><br>
-			Comment: <textarea required name="msg" rows="5" cols="40"  placeholder = "Write The Message" class="form-control"></textarea>
-			<br><br>
-			
-			<br><br>
-			<button class="btn btn-success" name="btn-send"> Send </button>
-</form>
-							<!-- END Contact FORM -->
-						</div>
-
-						<div class="col-lg-4 contact mt-sm-30 mt-xs-30">
+						<div  class="col-lg-4 contact mt-sm-30 mt-xs-30">
 							<div class="headeing pb-20">
 								<h2>Contact Info</h2>
 								<span class="b-line l-left line-h"></span>
@@ -180,6 +81,7 @@
 			</section>
 			<!-- Contact Section -->
 			<!--End Contact-->
+</div>
 		 
 
 			<?php require_once 'includes/footer.php'  ?>
