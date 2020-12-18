@@ -54,8 +54,8 @@
 											<div id="collapseThree" class="collapse bg-custom" role="tabpanel" aria-labelledby="headingThree">
 												<div class="card-block">
 													<p>
-													Our OB-GYNs provide a wide range of preventive care services, including pap smears,pelvic exams, ultrasounds, and blood work. 
-													We can answer all questions about pregnancy,reproductive health, infertility, & numerous other topics.
+													Our OB-GYNs provide a wide range of preventive care services, including pap smears, pelvic exams, ultrasounds, and blood work. 
+													We can answer all questions about pregnancy, reproductive health, infertility, & numerous other topics.
 													</p>
 												</div>
 											</div>

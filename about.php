@@ -114,7 +114,7 @@
 											<div class="tl-content">
 												<h4 class="tl-tile text-danger">We are innovation leaders</h4>
 												<p>
-												combining the most contemporary assessment and treatment techniques to make you feel better from pain regain the quality of life.
+												combining the most contemporary assessment and treatment techniques to make you feel better from pain and regain the quality of life.
 												</p>
 											</div>
 										</div>
@@ -189,7 +189,7 @@
 									<p>
 									Durga has been practicing in the field of Physiotherapy since 1998 and is the owner of MedRehab Professionals.
 									In order to provide optimal patient care, Durga is always enthusiastic to learn new methods & techniques to help his clients better.
-									"We strive to provide absolute care & do all that can make Physiotherapy a great experience for our clients.We do what it takes because we believe
+									"We strive to provide absolute care & do all that can make Physiotherapy a great experience for our clients. We do what it takes because we believe.
 									</p>
 									
 								</div>
