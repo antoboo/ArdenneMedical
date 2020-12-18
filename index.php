@@ -146,7 +146,7 @@
 								</figure>
 								<h3><a href="#">Home Visits</a></h3>
 								<p>
-								Durning this pandemic, your safety is our priority. Set your appointment, you will be contacted to confirm time of visit. 
+								During this pandemic, your safety is our priority. Set your appointment, you will be contacted to confirm time of visit. 
 								</p>
 							</div>
 
@@ -166,7 +166,7 @@
 								</figure>
 								<h3><a href="#">Chronic Care</a></h3>
 								<p>
-									Blood Testing, Hypertension, Over Weight, we have your interset at heart. Your information will be protected.
+									Blood Testing, Hypertension, Over Weight, we have your interest at heart. Your information will be protected.
 								</p>
 							</div>
 
