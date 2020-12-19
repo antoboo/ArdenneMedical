@@ -14,7 +14,7 @@
 						<!-- SLIDE  -->
 						<li data-index="rs-129"  >
 							<!-- MAIN IMAGE -->
-							<img src="assets/images/banner/slider6.jpg"  alt=""  class="rev-slidebg" >
+							<img src="assets/images/banner/slider1.jpg"  alt=""  class="rev-slidebg" >
 							<!-- LAYERS -->
 							<!-- LAYER NR. 2 -->
 							<div class="tp-caption Newspaper-Title tp-resizeme "
