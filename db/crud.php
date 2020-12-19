@@ -182,12 +182,15 @@
                     if ($stmt->rowCount()>0) 
                     {
                         ?>
-                        <div class="alert alert-success" role="alert">
-                        echo "Your emailaddress was detected in our database, you will be contacted shorthly to confirm your multiple appointment requests";
+                        <div class="alert alert-danger" role="alert">
+                        Your emailaddress was detected in our database, you will be contacted shorthly to confirm your multiple appointment requests
                         </div> <?php
                     }
-                    else{
-                        echo "Your appointment request was added, you will be contacted shorthly to confirm appointment date";
+                    else{?>
+
+                        <!-- <div class="alert alert-success" role="alert">
+                        Your appointment request was added, you will be contacted shorthly to confirm appointment date
+                        </div>--><?php 
                     }
                      return $result;
                 }

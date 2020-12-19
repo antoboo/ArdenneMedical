@@ -28,7 +28,7 @@
          
 
                 $results = $crud -> checkemail($email);                  
-
+                $doctorsName=$crud->getDoctorsById($doctors);
                  //$results['emailaddress'];
 
             if( $results==false ){
@@ -65,7 +65,7 @@
 
 
     
-
+echo "$orig_file";
 ?>
 
 
@@ -76,7 +76,7 @@
 
 <div class="card" style="width: 20rem;">
         <div class="card-body">
-            <h5 class="card-title"><?php echo $_POST['firstname'].' '. $_POST['lastname']; ?></h5>
+            <h4 class="card-title"><?php echo $_POST['firstname'].' '. $_POST['lastname']; ?></h4>
             <h6 class="card-subtitle mb-2">Your Doctor is:
             <?php echo $doctorsName['name']; ?>
             </h6>

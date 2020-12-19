@@ -114,6 +114,16 @@ class ComposerStaticInitc7fef2d4a197a3051770373c4ae405b9
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'M' => 
+        array (
+            'Mailjet' => 
+            array (
+                0 => __DIR__ . '/..' . '/mailjet/mailjet-apiv3-php/src',
+            ),
+        ),
+    );
+
     public static $fallbackDirsPsr0 = array (
         0 => __DIR__ . '/..' . '/elastic-email/web-api-client/src',
     );
@@ -130,6 +140,7 @@ class ComposerStaticInitc7fef2d4a197a3051770373c4ae405b9
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc7fef2d4a197a3051770373c4ae405b9::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc7fef2d4a197a3051770373c4ae405b9::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitc7fef2d4a197a3051770373c4ae405b9::$prefixesPsr0;
             $loader->fallbackDirsPsr0 = ComposerStaticInitc7fef2d4a197a3051770373c4ae405b9::$fallbackDirsPsr0;
             $loader->classMap = ComposerStaticInitc7fef2d4a197a3051770373c4ae405b9::$classMap;
 
