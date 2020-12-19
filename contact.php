@@ -20,12 +20,9 @@
 										<div class="icon ion-ios-location"></div>
 										<div class="content">
 											<p>
-												
+											<a href="https://goo.gl/maps/HnTCJtmeL2Zi1wrt9">
 												7A Ardenne Road
-												
-											</p>
-											<p>
-												Jamaica, Kingston 20
+										        Jamaica, Kingston 20
 											</p>
 										</div>
 									</li>
