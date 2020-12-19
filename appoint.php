@@ -48,7 +48,7 @@
                     
                 </div>
 
-                <div class="form-control">
+                <div required class="form-control">
                             <label for="gender">Gender</label><br/>
                                 <!-- <input required type="radio" class="form-control" id="mgender" name="mgender" aria-describedby="genderHelp">
                                 <input required type="radio" class="form-control" id="lgender" name="fgender" aria-describedby="genderHelp"> -->
