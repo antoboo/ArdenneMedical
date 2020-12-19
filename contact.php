@@ -31,15 +31,15 @@
 									</li>
 
 									<li>
-										<div class="icon ion-android-call"></div>
-										<div class="content">
+										<i class="fa fa-phone"></i>
 											<p>
-												876 324 7412
+								<a href="tel:8762943710" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"><p class="call-button">8762943710</p></a>
+
 											</p>
 											<p>
-												876 324 4578
+								 <a href="tel:8763329320" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"><p class="call-button">8763329320</p></a>
+
 											</p>
-										</div>
 									</li>
 									<li>
 										<div class="icon ion-ios-email"></div>
